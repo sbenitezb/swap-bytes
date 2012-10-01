@@ -25,7 +25,7 @@
                #+sbcl (:sbcl-file "sbcl-defknowns")
                #+sbcl (:file "sbcl-vops")
                #+sbcl (:file "sbcl")
-               #-ccl (:file "portable")
+               #-(or ccl) (:file "portable")
                (:file "utils")))
 
 (asdf:defsystem #:swap-bytes-test
